@@ -12,22 +12,56 @@ $tela: none
 
 [v-cloak]
   display: $tela
+
 .card
   margin: 0 auto
   margin-bottom: 1rem
   width: 90vw
+
+.box
+  width: 90%
+  margin: 0 auto
+
 .msgbox
   position: fixed
   width: 100vw !important
   bottom: 0
+
 .container
   width: 98vw
   height: 100vh
   margin: 0 auto
   box-sizing: border-box
   padding: 0
+
 .textarea
   height: 100px
+
+#app
+  padding-top: 3.5rem
+
+.menu
+  display: flex
+  position: fixed
+  top: 0
+  background-color: white
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  align-items: center
+  width: 100vw
+  padding: 1vh
+  justify-content: space-around
+  img
+    height: 2.2rem
+    width: auto
+    margin: 0
+  .button
+    background-color: transparentize(black, 0.95)
+    &:hover
+      background-color: transparentize(black, 0.85)
+    &:active
+      background-color: transparentize(black, 1)
+
+
 @media screen and (max-width: 800px)
   $tamanho: 87%
   /* - Variável para editar o mesmo tamanho em dois elementos diferentes */
@@ -38,3 +72,6 @@ $tela: none
     margin: 0 auto
     box-sizing: border-box
     padding: 0
+    .box
+      width: 100%
+      margin: 0 auto
