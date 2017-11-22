@@ -13,7 +13,7 @@
   <div id="app" v-cloak>
     <div class="menu">
       <img src="https://vuejs.org/images/logo.png" alt="Logo Vuejs"/>
-      <button v-else class="button">Sair</button>
+      <button v-show="entrou" class="button" @click="sair">Sair</button>
     </div>
     <div class="has-text-centered">
       <h1 class="title is-3">{{inicial}}</h1>

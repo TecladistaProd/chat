@@ -27,6 +27,11 @@ let app = new Vue({
         window.localStorage.setItem('nickname', this.nickname)
       }
     },
+    sair(){
+      this.entrou = false
+      window.localStorage.removeItem('nickname')
+      this.nickname = ''
+    },
     enviar(){
       if(this.msg !== ''){
         let message = {
