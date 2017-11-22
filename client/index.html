@@ -27,17 +27,6 @@
         <input type="button" class="button is-info is-large" value="Entrar" @click="entra"/>
     </div>
     <div v-else>
-      <div class="box">
-          <div class="field">
-            <div class="control">
-              <label class="subtitle is-4 has-text-grey">
-                Mensagem:
-                <textarea class="textarea" placeholder="digite sua mensagem" v-model="msg"></textarea>
-              </label>
-            </div>
-          </div>
-          <input type="button" class="button is-info is-large" value="Enviar" @click="enviar"/>
-      </div>
       <div class="card" v-for="message in messages">
         <div class="card-content">
           <div class="media">
@@ -50,6 +39,17 @@
             {{message.message}}
           </div>
         </div>
+      </div>
+      <div class="box msgbox">
+          <div class="field">
+            <div class="control">
+              <label class="subtitle is-4 has-text-grey">
+                Mensagem:
+                <textarea class="textarea" placeholder="digite sua mensagem" v-model="msg"></textarea>
+              </label>
+            </div>
+          </div>
+          <input type="button" class="button is-info is-large" value="Enviar" @click="enviar"/>
       </div>
     </div>
   </div>
