@@ -8,10 +8,12 @@
 @import "sass/layout/_all"
 
 $tela: none
-/* - Variável para esconder tela enquanto não carregar o VueJs */
+
+/* - Isto é uma Variável com valor none, quando compilado onde estiver com a Variável fica com o valor definido aqui */
 
 [v-cloak]
   display: $tela
+/* Elemento vue no css que define o que acontece enquanto não carrega as funções*/
 
 .card
   margin: 0 auto
@@ -39,7 +41,7 @@ $tela: none
 
 #app
   padding-top: 3.5rem
-
+/* - Aqui na classe menu está definido como um flexbox, com os items alinhado no centro e o espaço distribuido pelos lados dos itens , vw = largura de dentro do navegador dividido por cem, vh - altura da tela bla bla*/
 .menu
   display: flex
   position: fixed
@@ -61,10 +63,9 @@ $tela: none
     &:active
       background-color: transparentize(black, 1)
 
-
 @media screen and (max-width: 800px)
   $tamanho: 87%
-  /* - Variável para editar o mesmo tamanho em dois elementos diferentes */
+  /* - Variável para editar o tamanho */
   .card
     width: $tamanho
   .container
