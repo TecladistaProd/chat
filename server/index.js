@@ -3,7 +3,7 @@ const app = express()
 const http = require('http').Server(app)
 const BodyParser = require('body-parser')
 const io = require('socket.io')(http)
-const porta = 5400
+const porta = process.env.PORT || 5400
 
 app.use(express.static('client'))
 app.use(BodyParser.json())
