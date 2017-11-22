@@ -5,7 +5,7 @@ socket.on('chatvue', message=>{
 })
 
 let app = new Vue({
-  el:'.container',
+  el:'#app',
   data:{
     inicial: 'Bem Vindo ao Chat com Vuejs',
     nickname: '',
