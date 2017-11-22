@@ -6,9 +6,12 @@
 @import "sass/components/_all"
 @import "sass/grid/_all"
 @import "sass/layout/_all"
-$teste: none
+
+$tela: none
+/* - Variável para esconder tela enquanto não carregar o VueJs */
+
 [v-cloak]
-  display: $teste
+  display: $tela
 .card
   margin-bottom: 1rem
 .box
@@ -23,6 +26,7 @@ $teste: none
 
 @media screen and (max-width: 800px)
   $tamanho: 87%
+  /* - Variável para editar o mesmo tamanho em dois elementos diferentes */
   .card
     width: $tamanho
   .box
