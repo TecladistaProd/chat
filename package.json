@@ -4,7 +4,7 @@
   "description": "chat real-time em socket.io",
   "main": "server/index.js",
   "scripts": {
-    "dev": "nodemon"
+    "start": "nodemon"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
